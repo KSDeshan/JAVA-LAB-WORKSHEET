@@ -7,11 +7,7 @@ public class Q5 {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter a sentence:");
             String sentence = sc.nextLine();
-
-
             String cleaned = sentence.replaceAll("[^a-zA-Z]", "").toLowerCase();
-
-
             String reversed = new StringBuilder(cleaned).reverse().toString();
 
             if (cleaned.equals(reversed)) {
