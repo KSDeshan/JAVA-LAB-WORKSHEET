@@ -1,19 +1,22 @@
 package LW_3;
 
 import java.util.Scanner;
-class Temperature1 {
+
+class Temperature {
     private double celsius;
 
-
-    public Temperature1() {
+    public Temperature() {
         celsius = 0.0;
     }
-    public Temperature1(double celsius) {
+
+    public Temperature(double celsius) {
         this.celsius = celsius;
     }
+
     public double toCelsius() {
         return celsius;
     }
+
     public double toFahrenheit() {
         return celsius * 9 / 5 + 32;
     }
@@ -22,23 +25,23 @@ class Temperature1 {
         this.celsius = celsius;
     }
 
-
     public void setFahrenheit(double fahrenheit) {
         this.celsius = (fahrenheit - 32) * 5 / 9;
     }
 }
 
-public class Q1 {
+public class Q2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter temperature in Fahrenheit: ");
+        double inputFahrenheit = scanner.nextDouble();
 
-        System.out.print("Enter temperature in Celsius: ");
-        double inputCelsius = scanner.nextDouble();
+        Temperature temp = new Temperature();
 
+        temp.setFahrenheit(inputFahrenheit);
 
-        Temperature temp = new Temperature(inputCelsius);
-        System.out.println("Equivalent temperature in Fahrenheit: " + temp.toFahrenheit());
+        System.out.println("Equivalent temperature in Celsius: " + temp.toCelsius());
 
         scanner.close();
     }
