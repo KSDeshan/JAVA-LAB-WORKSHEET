@@ -2,7 +2,7 @@ package LW_3;
 
 import java.util.Scanner;
 
-class Temperature {
+class Temperature{
     private double celsius;
 
     public Temperature() {
