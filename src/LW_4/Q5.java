@@ -112,6 +112,5 @@ public class Q5 {
         System.out.printf("Total: $%.2f\n", total);
 
         input.close();
-
     }
 }
