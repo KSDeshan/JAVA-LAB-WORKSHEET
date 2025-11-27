@@ -4,7 +4,6 @@ public class UniversityManagementSystem {
 
     public static void main(String[] args) {
 
-
         Department d1 = new Department("Software Engineering");
 
 
