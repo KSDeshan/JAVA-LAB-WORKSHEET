@@ -1,0 +1,8 @@
+package LW_5.Q1;
+
+public class person {
+    private String name;
+    public person(String name) { this.name = name; }
+    public String getName() { return name; }
+}
+
